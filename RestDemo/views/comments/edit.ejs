@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+
+<body>
+    <h1>Edit Comment</h1>
+    <form method="POST" action="/comments/<%= found.id %>?_method=PATCH">
+        <textarea name="comment" id="" cols="30" rows="5">
+            <%= found.comment %>
+        </textarea>
+        <br><button type="submit">Save</button>
+    </form>
+    <form action="/comments/<%= found.id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+    </form>
+    <a href="/comments/">Back to Index</a>
+</body>
+</html>

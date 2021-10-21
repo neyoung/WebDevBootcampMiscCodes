@@ -1,0 +1,13 @@
+<%- include('partials/head.ejs') %>
+
+<body>
+    <h1>Comment id: <%= found.id %></h1>
+    <%= found.comment %> - <b> <%= found.username %></b>
+    <a href="/comments/<%= found.id %>/edit">Edit</a>
+    <br><br>
+    <form action="/comments/<%= found.id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+    </form>
+    <a href="/comments/">Back to Index</a>
+</body>
+</html>

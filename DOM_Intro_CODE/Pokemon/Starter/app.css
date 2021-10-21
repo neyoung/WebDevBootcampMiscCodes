@@ -1,0 +1,8 @@
+.pokemon div {
+    display:inline-block;
+    text-align: center;
+}
+
+.pokemon span {
+    display:block;
+}
